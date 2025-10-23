@@ -23,7 +23,7 @@ repository               : "academicpages/wangying1278.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "../images/profile.png"
+  avatar           : "../images/zhaopian.png"
   name             : "Ying Wang"
   pronouns         : # example: "she/her"  
   bio              : "Peking University"
