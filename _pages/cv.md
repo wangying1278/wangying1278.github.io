@@ -14,7 +14,7 @@ Education
 * Ph.D in Medical Bioinformatics, Peking University, 2029 (expected)
 * M.S. in biomedical engineering, Harbin Medical University, 2025
 * B.S. in biotechnology, Harbin Medical University, 2022
-'''
+
 Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
@@ -31,7 +31,7 @@ Work experience
   * GitHub University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
-''' 
+
 Skills
 ======
 * English
@@ -52,7 +52,7 @@ Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
- ''' 
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
@@ -68,4 +68,3 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
-'''
