@@ -11,10 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
-
+* Ph.D in Medical Bioinformatics, Peking University, 2029 (expected)
+* M.S. in biomedical engineering, Harbin Medical University, 2025
+* B.S. in biotechnology, Harbin Medical University, 2022
+'''
 Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
@@ -31,22 +31,28 @@ Work experience
   * GitHub University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
-  
+''' 
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* English
+  * CET-4/6
+  * IELTS 6.5
+* programming language
+  * R
+  * Python
+  * Matlab
+  * Perl
+* ML algorithms 
+  *  WGCNA,  Lasso-Cox regression analysis, RF, SVM
+* DL algorithms
+  *  CNN, ResNet, MPNN
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+ ''' 
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
@@ -62,3 +68,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+'''
