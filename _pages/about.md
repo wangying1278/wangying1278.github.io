@@ -30,7 +30,7 @@ Major Courses: Bioinformatics, Systems Biology, R Language Programming and Desig
 Scientific Research Papers
 ======
 1. Ying Wang, Yangguang Su, Kairui Zhao, Diwei Huo, Zhenshun Du, Zhiju Wang, Hongbo Xie, Lei Liu , Qing
-Jin, Xuekun Ren , Xiujie Chen and Denan Zhang. A deep learning drug screening framework for integrating local-global characteristics: a novel attempt for limited data.  doi: 10.1016/j.heliyon.2024.e34244
+Jin, Xuekun Ren , Xiujie Chen and Denan Zhang. [A deep learning drug screening framework for integrating local-global characteristics: a novel attempt for limited data.](https://www.sciencedirect.com/science/article/pii/S2405844024102757) doi: 10.1016/j.heliyon.2024.e34244
 
-2. Yangguang Su, Ying Wang, Zhuo Qu, Jiaxin Liu, Xuekun Ren, Denan Zhang and Xiujie Chen. Multi-level
-characteristics recognition of cancer core therapeutic targets and drug screening for a broader patient population. doi: 10.3389/fphar.2023.1280099
+2. Yangguang Su, Ying Wang, Zhuo Qu, Jiaxin Liu, Xuekun Ren, Denan Zhang and Xiujie Chen. [Multi-level
+characteristics recognition of cancer core therapeutic targets and drug screening for a broader patient population.](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2023.1280099/full) doi: 10.3389/fphar.2023.1280099
