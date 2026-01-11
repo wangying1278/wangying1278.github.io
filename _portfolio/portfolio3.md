@@ -43,4 +43,4 @@ new_picu_data[numeric_cols] = new_picu_data[numeric_cols].fillna(new_picu_data[n
 # 验证数据完整性
 print("处理后各列非空值数量：")
 print(new_picu_data.count())
-```python
+```
