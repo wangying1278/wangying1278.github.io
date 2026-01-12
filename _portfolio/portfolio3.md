@@ -140,16 +140,12 @@ or_table = np.exp(or_table)
 
 # 重命名列
 or_table.columns = ['OR', '2.5%', '97.5%']
-
 # 去掉截距（
 or_table = or_table.drop(index='const', errors='ignore')
-
 # 保留两位小数
 or_table = or_table.round(2)
-
 # 按 OR 排序
 or_table = or_table.sort_values(by='OR', ascending=False)
-
 or_table
 
 ```
@@ -239,6 +235,7 @@ or_df
 | lab_5225_range | 1.04  | 1.02   | 1.05   |
 | lab_5235_max   | 1.01  | 1.00   | 1.01   |
 | lab_5257_min   | 0.99  | 0.99   | 0.99   |
+
 结果可视化
 ```python
 # y_true: 真实标签
