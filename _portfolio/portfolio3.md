@@ -5,8 +5,6 @@ type: "Data Analysis"
 permalink: /portfolio/picu-linear-regression
 date: 2026-01-11
 excerpt: "基于PICU患者临床数据，完成数据清洗、特征可视化与线性回归建模，探索患者关键指标与临床结局的量化关系"
-header:
-  teaser: /images/portfolio/picu-linear-regression/numeric_features_hist.png
 tags:
 - 临床数据分析
 - 线性回归
