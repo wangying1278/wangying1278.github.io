@@ -273,6 +273,6 @@ plt.grid(alpha=0.3)
 
 plt.show()
 ```
-![AUC2](/images/portfolio3/AUC1.png "ROC 曲线")
+![AUC2](/images/portfolio3/AUC2.png "ROC 曲线")
 
 在剔除无显著意义的预测因子后，构建了一个简化的多变量逻辑回归模型。最终模型包含五个实验室检测得出的变量，并且对住院期间死亡率具有良好的判别能力（曲线下面积 AUC = 0.715）。所有保留下来的预测因子均与死亡率独立相关（p < 0.05）。
