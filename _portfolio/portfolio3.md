@@ -1,5 +1,5 @@
 ---
-title: "临床数据分析与线性回归建模（PICU临床数据应用）"
+title: "临床数据分析与回归建模（PICU临床数据应用）"
 collection: portfolio
 type: "Data Analysis"
 permalink: /portfolio/picu-linear-regression
