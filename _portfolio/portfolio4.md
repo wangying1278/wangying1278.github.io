@@ -5,8 +5,6 @@ type: "Machine Learning"
 permalink: /portfolio/classification-clustering-clinical-data
 date: 2026-01-12
 excerpt: "基于13258条临床数据，实现逻辑回归、随机森林、SVM三大分类模型与K-Means聚类，解决患者死亡风险预测与临床指标分组问题"
-header:
-  teaser: /images/portfolio/classification-clustering/elbow_method.png
 tags:
 - 分类算法
 - 无监督聚类
