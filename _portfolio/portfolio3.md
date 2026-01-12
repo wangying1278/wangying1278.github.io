@@ -187,7 +187,7 @@ plt.show()
 ![AUC1](/images/portfolio3/AUC1.png "ROC 曲线")
 
 ### 5. 模型优化与展示
-我们选择保留对预测结果影响较大的变量进行模型优化。我们选择了 lab_5237_min、lab_5257_min、lab_5227_min、lab_5225_range 作为预测模型中的独立相关因素。
+选择保留对预测结果影响较大的变量进行模型优化。我们选择了 lab_5237_min、lab_5257_min、lab_5227_min、lab_5225_range 作为预测模型中的独立相关因素。
 ```python
 selected_features = [
     'lab_5237_min',
