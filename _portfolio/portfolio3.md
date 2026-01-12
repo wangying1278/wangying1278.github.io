@@ -34,7 +34,7 @@ from sklearn.metrics import roc_auc_score, roc_curve, auc
 import matplotlib.pyplot as plt
 ```
 ### 1. 数据读取与预处理
-聚焦关键临床指标，处理缺失值并筛选有效特征，为建模奠定基础。
+筛选感兴趣的临床特征，为建模奠定基础。
 ```python
 path = "icu_first24hours.csv"
 picu_data = pd.read_csv(path)
