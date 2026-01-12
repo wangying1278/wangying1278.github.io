@@ -71,22 +71,32 @@ new_picu_data.var()
 | lab_5235_max | 8671 | 42.610 | 39.600 | 218.750 |
 | lab_5257_min | 8662 | 91.546 | 105.000 | 3052.255 |
 
-临床特征的直方图和相线图展示
+临床特征的直方图和箱子线图展示
 ```python
+# === 直方图绘制代码 ===
 # 定义要绘制直方图的列名列表，包含8个临床指标
 colname =['age_month','lab_5097_max','lab_5099_min','lab_5237_min','lab_5227_min','lab_5225_range','lab_5235_max','lab_5257_min']
 fig, axs = plt.subplots(int(len(colname)/2), 2, constrained_layout=True, figsize=(8, 6), dpi=150)
+# 使用seaborn的histplot函数绘制直方图
 for i in range(len(colname)):
-    # 核心代码：使用seaborn的histplot函数绘制直方图
-    # x=colname[i] 指定要绘制的变量（当前循环的列名）
-    # data=picu_data 指定数据源
-    # alpha=0.4 设置直方图的透明度为0.4（0为完全透明，1为完全不透明）
-    # kde=True 在直方图上叠加核密度估计曲线，显示数据的概率密度分布
-    # ax=axs[i//2, i%2] 指定当前直方图绘制在哪个子图位置
-    # i//2 计算行索引（整数除法），i%2 计算列索引（取余数）
     sns.histplot(x=colname[i], data=new_picu_data, alpha=0.4, kde=True, ax=axs[i//2, i%2])
 plt.suptitle("Bar Plot")
+# === 箱线图绘制代码） ===
+# 创建一个新的图形对象和子图数组用于绘制箱线图
+fig, axs = plt.subplots(
+    int(len(colname) / 2), 2, 
+    constrained_layout=True, 
+    figsize=(8, 6), 
+    dpi=150
+)
+# 使用seaborn的boxplot函数绘制分组箱线图
+for i in range(len(colname)): 
+    sns.boxplot(
+        data=new_picu_data, 
+        x="HOSPITAL_EXPIRE_FLAG", 
+        y=colna
 ```
+
 
 ### 2. 统计分析
 
