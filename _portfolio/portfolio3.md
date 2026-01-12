@@ -110,7 +110,7 @@ for i in range(len(colname)):
         y=colna
 ```
 ![直方图](/images/portfolio3/直方图.png "直方图")
-![箱线图](/images/portfolio3/箱线.png "箱线图")
+![箱线图](/images/portfolio3/箱线图.png "箱线图")
 
 ### 3. 构建逻辑回归模型
 由于因变量是二分类，这里改为使用逻辑回归模型
