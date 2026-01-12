@@ -132,7 +132,6 @@ rf.fit(X_train, y_train)
 y_pred_rf = rf.predict(X_test)
 
 # 3. 评估
-
 # 计算随机森林模型的准确率
 accuracy_rf = accuracy_score(y_test, y_pred_rf)
 
