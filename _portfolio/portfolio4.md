@@ -1,5 +1,5 @@
 ---
-title: "机器学习分类与聚类实战（PICU临床数据应用）"
+title: "机器学习分类与聚类（PICU临床数据应用）"
 collection: portfolio
 type: "Machine Learning"
 permalink: /portfolio/classification-clustering-clinical-data
