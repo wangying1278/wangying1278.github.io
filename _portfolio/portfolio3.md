@@ -59,6 +59,7 @@ new_picu_data.median()
 new_picu_data.var()
 #new_picu_data.to_excel("data.xlsx", index=False)
 ```
+
 | 变量 | 非空值数 (Count) | 均值 (Mean) | 中位数 (Median) | 方差 (Variance) |
 |---|---:|---:|---:|---:|
 | age_month | 13258 | 30.0 | 8.0 | 1939.0 |
