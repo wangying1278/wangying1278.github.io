@@ -48,8 +48,30 @@ warnings.filterwarnings("ignore")
 path = "data.xlsx"
 data = pd.read_excel(path)
 ```
-### 2. 分类任务：预测患者住院死亡风险
-#### 2.1. 数据预处理
+### 2.数据统计
+检查数据的维度、列名和缺失值情况。 对结局变量 `HOSPITAL_EXPIRE_FLAG` 的分布进行计数。
+```python
+# 检查数据维度
+print("数据维度:", data.shape)
+
+# 检查缺失值情况
+print("\n缺失值统计:")
+print(data.isnull().sum())
+
+# 检查结局变量分布
+print("\n结局分布:")
+print(data['HOSPITAL_EXPIRE_FLAG'].value_counts())
+```
+| 统计维度                | 数值/描述                                                                 |
+|-------------------------|--------------------------------------------------------------------------|
+| 数据集维度              | 13258（样本） × 7（变量）                                               |
+| 无缺失值字段            | age_month、HOSPITAL_EXPIRE_FLAG                                          |
+| 实验室指标缺失范围      | 4587-4642条（缺失率约34.6%-35.0%）                                       |
+| 结局变量分布（存活）| 12478例（占比94.1%）|
+| 结局变量分布（死亡）| 780例（占比5.9%）|
+
+### 3. 分类任务：预测患者住院死亡风险
+#### 3.1. 数据预处理
 ```python
 # 使用均值填充缺失值
 datadf = pd.DataFrame(data, columns=data.columns)
@@ -64,13 +86,12 @@ y = data_imputed['HOSPITAL_EXPIRE_FLAG']
 # 划分训练集和测试集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
-#### 2.2. 模型训练与评估
+#### 3.2. 模型训练与评估
 分别使用 **逻辑回归**、**随机森林** 和 **支持向量机** 这三种算法进行模型训练，并对每个模型在测试集上的表现进行评估。
 ```python
 # --- 逻辑回归 (Logistic Regression) ---
 
 # 1. 实例化与训练
-
 # 创建逻辑回归模型对象
 log_reg = LogisticRegression(
 
@@ -194,8 +215,8 @@ roc_auc_svc = roc_auc_score(y_test, y_pred_svc)
 print(f"支持向量机 - 准确率: {accuracy_svc:.4f}, 召回率: {recall_svc:.4f}, AUC: {roc_auc_svc:.4f}")
 ```
 支持向量机 - 准确率: 0.9412, 召回率: 0.0000, AUC: 0.5000
-### 3. 无监督聚类：患者分群
-#### 3.1. 数据预处理
+### 4. 无监督聚类：患者分群
+#### 4.1. 数据预处理
 ```python
 # 1. 选择用于聚类的特征
 features = ['lab_5237_min','lab_5227_min','lab_5225_range','lab_5235_max','lab_5257_min']
@@ -212,7 +233,7 @@ data_clustering_imputed = pd.DataFrame(imputer.fit_transform(data_clustering), c
 scaler = StandardScaler()
 data_clustering_scaled = scaler.fit_transform(data_clustering_imputed)
 ```
-#### 3.2. 确定最佳聚类数
+#### 4.2. 确定最佳聚类数
 ```python
 # 计算不同簇数下的WCSS
 
