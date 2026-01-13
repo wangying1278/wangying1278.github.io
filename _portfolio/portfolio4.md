@@ -35,6 +35,11 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, recall_score, roc_auc_score, confusion_matrix, roc_curve
+from sklearn.metrics import accuracy_score, recall_score, roc_auc_score, confusion_matrix, roc_curve
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+import warnings
+warnings.filterwarnings("ignore")
 ```
 ### 1.数据读取
 读取PICU临床数据，包含临床指标和结局变量
